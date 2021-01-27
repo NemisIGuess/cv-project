@@ -1,0 +1,87 @@
+.personalDiv {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'avatar name'
+    'personalInfo profile';
+  background-color: var(--blue);
+  height: 350px;
+}
+
+.avatarImg {
+  grid-area: avatar;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  caret-color: transparent;
+}
+
+.name {
+  grid-area: name;
+  font-size: 22px;
+  position: relative;
+  justify-self: center;
+  height: fit-content;
+  color: var(--white);
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  top: 100%;
+  left: -25%;
+}
+
+.jobPosition {
+  grid-area: name;
+  font-size: 16px;
+  position: relative;
+  justify-self: center;
+  height: fit-content;
+  top: 40%;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.personalInfoDiv {
+  grid-area: personalInfo;
+}
+
+.personalData {
+  font-size: 18px;
+  width: fit-content;
+  background-color: var(--white);
+  margin: 20px auto;
+  padding: 5px 10px 5px 10px;
+  color: var(--blue);
+}
+
+.personalInfoElement {
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  margin: 5px 0px 3px 0px;
+}
+
+.profileDiv {
+  grid-area: profile;
+}
+
+.profileDiv > .personalData {
+  margin: 20px 0px 20px 35px;
+}
+
+.profileText {
+  width: 400px;
+  margin: 5px 35px 20px 35px;
+  word-break: break-word;
+}

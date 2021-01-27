@@ -1,4 +1,17 @@
-.asd {
-  width: 500px;
-  background: rgb(92, 118, 153);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+  font-family: Roboto, sans-serif;
+  --blue: rgb(92, 118, 153);
+  --white: rgb(243, 225, 225);
+}
+
+.main {
+  width: 700px;
+}
+
+.profileTextArea {
+  resize: none;
+  height: 150px;
+  width: 400px;
 }
