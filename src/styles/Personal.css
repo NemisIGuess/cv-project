@@ -56,13 +56,14 @@
   grid-area: personalInfo;
 }
 
-.personalData {
+.personalSubtitle {
   font-size: 18px;
   width: fit-content;
   background-color: var(--white);
   margin: 20px auto;
   padding: 5px 10px 5px 10px;
   color: var(--blue);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.315);
 }
 
 .personalInfoElement {
@@ -76,7 +77,7 @@
   grid-area: profile;
 }
 
-.profileDiv > .personalData {
+.profileDiv > .personalSubtitle {
   margin: 20px 0px 20px 35px;
 }
 

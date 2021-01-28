@@ -13,7 +13,7 @@ const Personal = (props) => {
         <i>{props.personal[1]}</i>
       </p>
       <div className="personalInfoDiv">
-        <h2 className="personalData">
+        <h2 className="personalSubtitle">
           <i>Contacto</i>
         </h2>
         <p className="personalInfoElement">{props.personal[2]}</p>
@@ -21,7 +21,7 @@ const Personal = (props) => {
         <p className="personalInfoElement">{props.personal[4]}</p>
       </div>
       <div className="profileDiv">
-        <h2 className="personalData">
+        <h2 className="personalSubtitle">
           <i>Perfil</i>
         </h2>
         <p className="profileText">{props.personal[5]}</p>

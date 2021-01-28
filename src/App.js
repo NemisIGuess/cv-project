@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Personal from './components/Personal';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import './App.css';
 
 class App extends Component {
@@ -8,11 +10,11 @@ class App extends Component {
 
     this.state = {
       personal: [
-        'Ismael Perez',
-        'Frontend Developer',
-        '688931222',
-        'ismaelpjgg@gmail.com',
-        'rotxor.com',
+        'Juan Palomo',
+        'Periodista',
+        '677123123',
+        '677123123@gmail.com',
+        '123123.com',
         'En construccion...',
       ],
       name: '',
@@ -118,6 +120,8 @@ class App extends Component {
           <button type="submit">Add personal info</button>
         </form>
         <Personal personal={personal} />
+        <Education />
+        <Experience />
       </div>
     );
   }
