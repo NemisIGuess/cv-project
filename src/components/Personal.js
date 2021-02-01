@@ -7,24 +7,24 @@ const Personal = (props) => {
     <div className="personalDiv">
       <img src={avatar} alt="" className="avatarImg"></img>
       <h1 className="name">
-        <i>{props.personal[0]}</i>
+        <i>{props.personal.name}</i>
       </h1>
       <p className="jobPosition">
-        <i>{props.personal[1]}</i>
+        <i>{props.personal.job}</i>
       </p>
       <div className="personalInfoDiv">
         <h2 className="personalSubtitle">
           <i>Contacto</i>
         </h2>
-        <p className="personalInfoElement">{props.personal[2]}</p>
-        <p className="personalInfoElement">{props.personal[3]}</p>
-        <p className="personalInfoElement">{props.personal[4]}</p>
+        <p className="personalInfoElement">{props.personal.telephone}</p>
+        <p className="personalInfoElement">{props.personal.email}</p>
+        <p className="personalInfoElement">{props.personal.website}</p>
       </div>
       <div className="profileDiv">
         <h2 className="personalSubtitle">
           <i>Perfil</i>
         </h2>
-        <p className="profileText">{props.personal[5]}</p>
+        <p className="profileText">{props.personal.profile}</p>
       </div>
     </div>
   );
