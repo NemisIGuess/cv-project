@@ -6,12 +6,12 @@ import './App.css';
 
 const App = () => {
   const [infoArray, setInfoArray] = useState({
-    name: '',
-    job: '',
-    telephone: '',
-    email: '',
-    website: '',
-    profile: '',
+    name: 'Nemis',
+    job: 'Editor',
+    telephone: '68889313222',
+    email: 'ismajur@gmail.com',
+    website: 'asidhasd.ciom',
+    profile: 'uoahsdoi',
   });
 
   const [name, setName] = useState('');
